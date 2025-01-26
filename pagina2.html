@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto de las Tecnologías Web en la Sociedad</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Impacto de las Tecnologías Web en la Sociedad</h1>
+            <div class="menu-icon" onclick="toggleMenu()" aria-label="Menú de navegación">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li class="mx-2"><a href="./index.html" class="text-white">Inicio</a></li>
+                    <li class="mx-2"><a href="./pagina1.html" class="text-white">Sociedad</a></li>
+                    <li class="mx-2"><a href="./pagina2.html" class="text-white">Negocios</a></li>
+                    <li class="mx-2"><a href="./pagina3.html" class="text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="business">
+            <div class="container">
+                <h2>Transformación Digital</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="business-image">
+                            <img src="./imagenes/transformacion.jpg" alt="Impacto en los negocios" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="business-text">
+                            <p>La transformación digital ha permitido a los negocios ser más eficientes y competitivos. Con este fin, la transformación digital es necesaria para cualquier empresa, organización sin fines de lucro o institución que busque sobrevivir en el futuro.</p><br>
+                            <b>Beneficios de la transformación digital:</b>
+                            <p>Brinda información estratégica detallada para fundamentar la toma de decisiones en tiempo real. Para muchas empresas, evaluar el rendimiento y el ROI a menudo ha sido un proceso retrospectivo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>Comercio Electrónico</h2>
+                <p>El comercio electrónico ha revolucionado la manera en que compramos y vendemos productos.</p>
+                <table class="table table-bordered">
+                    <caption>Comparación de Ventas en Tiendas Físicas vs. Online</caption>
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Ventas Tienda Física</th>
+                            <th>Ventas Online</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021</td>
+                            <td>$500M</td>
+                            <td>$300M</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>$450M</td>
+                            <td>$400M</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>$450M</td>
+                            <td>$400M</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('open');
+        }
+
+        // Cerrar el menú si se hace clic fuera de él
+        window.addEventListener('click', function(event) {
+            if (!document.getElementById('nav-links').contains(event.target) && !event.target.matches('.menu-icon')) {
+                document.getElementById('nav-links').classList.remove('open');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto de las Tecnologías Web en la Sociedad</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Impacto de las Tecnologías Web en la Sociedad</h1>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <nav id="nav-links">
+                <ul>
+                    <li class="mx-2"><a href="./index.html" class="text-white">Inicio</a></li>
+                    <li class="mx-2"><a href="./pagina1.html" class="text-white">Sociedad</a></li>
+                    <li class="mx-2"><a href="./pagina2.html" class="text-white">Negocios</a></li>
+                    <li class="mx-2"><a href="./pagina3.html" class="text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="bienvenidos" class="bg-secondary text-white py-5">
+            <div class="container">
+                <h2>Bienvenidos a la Sociedad Digital</h2>
+                <p>Las tecnologías web han transformado profundamente las interacciones sociales. Desde las redes sociales hasta los foros y las plataformas de comunicación, las tecnologías web han reconfigurado nuestra forma de relacionarnos y compartir información.</p>
+            </div>
+        </section>
+        
+        <section id="video">
+            <h2>Video Educativo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2meta.app" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Este video explora cómo las tecnologías web han cambiado la dinámica de las relaciones sociales y el acceso a la información.</p>
+        </section>
+        
+        <section id="impacto-sociedad">
+            <h2>Impacto en la Sociedad</h2>
+            <div class="container">
+                <p>El impacto social de las tecnologías web se refleja en la manera en que las personas interactúan, comparten y acceden a información. Desde la creación de comunidades virtuales hasta la modificación de comportamientos sociales, las tecnologías web han redefinido las normas sociales y culturales.</p>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="./imagenes/colaboracion.jpg" alt="Impacto social de las tecnologías web" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 bg-light p-4">
+                        <h3>Redes Sociales y Comunicación</h3>
+                        <p>Las redes sociales son una de las herramientas más potentes que han emergido con las tecnologías web, permitiendo a las personas mantenerse conectadas a nivel global y compartir experiencias de manera instantánea.</p>
+                    </div>
+                </div>
+                
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="./imagenes/acceso.jpg" alt="Acceso a la información" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 bg-light p-4">
+                        <h3>Acceso a la Información</h3>
+                        <p>El acceso a la información se ha expandido masivamente gracias a Internet, permitiendo que cualquier persona, en cualquier parte del mundo, pueda informarse sobre cualquier tema con solo unos clics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Reflexión Final</h2>
+            <div class="container">
+                <p>Las tecnologías web no solo han transformado los negocios y la educación, sino también las interacciones sociales y el acceso a la información. A medida que estas tecnologías continúan evolucionando, su impacto sobre la sociedad solo seguirá creciendo, redefiniendo la manera en que nos conectamos como humanidad.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>&copy; 2024 Impacto de las Tecnologías Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
